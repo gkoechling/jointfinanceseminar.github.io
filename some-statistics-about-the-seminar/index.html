@@ -75,6 +75,36 @@ h1.pt{font-size:30px;font-weight:600;margin:6px 0 6px;line-height:1.15}
 .foot .in{padding-top:14px;padding-bottom:18px}
 .foot a{color:var(--navy)}
 .talk.hide,.round.hide{display:none}
+/* small refinements for the stand-alone site (the Google Sites embeds keep their sizes) */
+html{scroll-behavior:smooth;scroll-padding-top:12px}
+body{display:flex;flex-direction:column;min-height:100vh;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+main.wrap{flex:1 0 auto;width:100%}
+.top{border-top:3px solid var(--red)}
+.brand{letter-spacing:.005em}
+a{text-underline-offset:2px}
+a:hover{color:var(--red)}
+::selection{background:#f1dede}
+.sub{font-size:16px}
+li{font-size:17px}
+.note{font-size:15.5px}
+.talk{padding-top:10px;padding-bottom:10px}
+.talk .p,.ds .pv{font-size:16px}
+.ds .w{font-size:17px}
+.round{margin-top:26px}
+h1.pt{margin-bottom:10px}
+details summary:hover{color:var(--red)}
+.card .ttl a:hover,.talk .p a:hover,.ds .nm a:hover{border-bottom-color:var(--red)}
+.foot{margin-top:28px}
+@media (max-width:600px){
+  body{font-size:17px}
+  .top .in{gap:6px 18px}
+  .top nav{gap:2px 14px;font-size:16px}
+  h1.pt{font-size:26px}
+  .ghero{padding-top:12px}
+  .ghero h1{font-size:34px}
+  .gtag{font-size:20px;margin-top:16px}
+  .gintro{font-size:17px}
+}
 </style>
 </head>
 <body>

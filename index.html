@@ -111,6 +111,36 @@ h1.pt{font-size:30px;font-weight:600;margin:6px 0 6px;line-height:1.15}
 .foot .in{padding-top:14px;padding-bottom:18px}
 .foot a{color:var(--navy)}
 .talk.hide,.round.hide{display:none}
+/* small refinements for the stand-alone site (the Google Sites embeds keep their sizes) */
+html{scroll-behavior:smooth;scroll-padding-top:12px}
+body{display:flex;flex-direction:column;min-height:100vh;font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+main.wrap{flex:1 0 auto;width:100%}
+.top{border-top:3px solid var(--red)}
+.brand{letter-spacing:.005em}
+a{text-underline-offset:2px}
+a:hover{color:var(--red)}
+::selection{background:#f1dede}
+.sub{font-size:16px}
+li{font-size:17px}
+.note{font-size:15.5px}
+.talk{padding-top:10px;padding-bottom:10px}
+.talk .p,.ds .pv{font-size:16px}
+.ds .w{font-size:17px}
+.round{margin-top:26px}
+h1.pt{margin-bottom:10px}
+details summary:hover{color:var(--red)}
+.card .ttl a:hover,.talk .p a:hover,.ds .nm a:hover{border-bottom-color:var(--red)}
+.foot{margin-top:28px}
+@media (max-width:600px){
+  body{font-size:17px}
+  .top .in{gap:6px 18px}
+  .top nav{gap:2px 14px;font-size:16px}
+  h1.pt{font-size:26px}
+  .ghero{padding-top:12px}
+  .ghero h1{font-size:34px}
+  .gtag{font-size:20px;margin-top:16px}
+  .gintro{font-size:17px}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Joint Finance Seminar", "url": "https://www.jointfinanceseminar.com/", "email": "info@jointfinanceseminar.com"}, {"@type": "Event", "name": "Joint Finance Seminar: Mary Ellen Carter (Boston College) – Board Reaction to Stakeholder Voice: Evidence from Anti-SLAPP Laws", "startDate": "2026-11-18T16:00:00+01:00", "endDate": "2026-11-18T17:15:00+01:00", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled", "isAccessibleForFree": true, "location": {"@type": "VirtualLocation", "url": "https://www.jointfinanceseminar.com/"}, "performer": {"@type": "Person", "name": "Mary Ellen Carter"}, "organizer": {"@type": "Organization", "name": "Joint Finance Seminar", "url": "https://www.jointfinanceseminar.com/"}, "description": "Online research seminar in finance and accounting via Zoom."}, {"@type": "Event", "name": "Joint Finance Seminar: Joseph Kalmenovitz (University of Rochester) – Contagious Deregulation", "startDate": "2026-11-25T16:00:00+01:00", "endDate": "2026-11-25T17:15:00+01:00", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled", "isAccessibleForFree": true, "location": {"@type": "VirtualLocation", "url": "https://www.jointfinanceseminar.com/"}, "performer": {"@type": "Person", "name": "Joseph Kalmenovitz"}, "organizer": {"@type": "Organization", "name": "Joint Finance Seminar", "url": "https://www.jointfinanceseminar.com/"}, "description": "Online research seminar in finance and accounting via Zoom."}]}</script>
 </head>
