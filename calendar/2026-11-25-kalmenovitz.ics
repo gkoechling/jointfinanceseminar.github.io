@@ -28,7 +28,7 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:jfs-2026-11-25-kalmenovitz@jointfinanceseminar.com
-DTSTAMP:20261113T232257Z
+DTSTAMP:20261113T234846Z
 DTSTART;TZID=Europe/Berlin:20261125T160000
 DTEND;TZID=Europe/Berlin:20261125T171500
 SUMMARY:Joint Finance Seminar: Joseph Kalmenovitz (University of Rochester)
