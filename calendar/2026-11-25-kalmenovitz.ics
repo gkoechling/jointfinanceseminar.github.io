@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Joint Finance Seminar//jointfinanceseminar.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Joint Finance Seminar
+X-WR-TIMEZONE:Europe/Berlin
+X-WR-CALDESC:Online research seminar in finance and accounting. www.jointfi
+ nanceseminar.com
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:jfs-2026-11-25-kalmenovitz@jointfinanceseminar.com
+DTSTAMP:20261113T212728Z
+DTSTART;TZID=Europe/Berlin:20261125T160000
+DTEND;TZID=Europe/Berlin:20261125T171500
+SUMMARY:Joint Finance Seminar: Joseph Kalmenovitz (University of Rochester)
+DESCRIPTION:Speaker: Joseph Kalmenovitz (University of Rochester)\nPaper: C
+ ontagious Deregulation\n\nJoin on Zoom: https://tinyurl.com/mrzv5kya\n\nFo
+ r more information\, visit our website: www.jointfinanceseminar.com
+LOCATION:Online (Zoom)
+URL:https://tinyurl.com/mrzv5kya
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

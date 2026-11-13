@@ -1,0 +1,103 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Joint Finance Seminar//jointfinanceseminar.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Joint Finance Seminar
+X-WR-TIMEZONE:Europe/Berlin
+X-WR-CALDESC:Online research seminar in finance and accounting. www.jointfi
+ nanceseminar.com
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:jfs-2026-10-28-cascino@jointfinanceseminar.com
+DTSTAMP:20261113T212728Z
+DTSTART;TZID=Europe/Berlin:20261028T160000
+DTEND;TZID=Europe/Berlin:20261028T171500
+SUMMARY:Joint Finance Seminar: Stefano Cascino (London School of Economics)
+DESCRIPTION:Speaker: Stefano Cascino (London School of Economics)\nPaper: T
+ ransparency on the Wrong Margin: Evidence from the Physician Payments Suns
+ hine Act\n\nJoin on Zoom: https://tinyurl.com/mrzv5kya\n\nFor more informa
+ tion\, visit our website: www.jointfinanceseminar.com
+LOCATION:Online (Zoom)
+URL:https://tinyurl.com/mrzv5kya
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfs-2026-11-04-franco@jointfinanceseminar.com
+DTSTAMP:20261113T212728Z
+DTSTART;TZID=Europe/Berlin:20261104T160000
+DTEND;TZID=Europe/Berlin:20261104T171500
+SUMMARY:Joint Finance Seminar: Francesca Franco (Bocconi University)
+DESCRIPTION:Speaker: Francesca Franco (Bocconi University)\nPaper: Executiv
+ e Bonus Adjustments to Industry Non-Financial Violations\n\nJoin on Zoom: 
+ https://tinyurl.com/mrzv5kya\n\nFor more information\, visit our website: 
+ www.jointfinanceseminar.com
+LOCATION:Online (Zoom)
+URL:https://tinyurl.com/mrzv5kya
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfs-2026-11-11-ben-david@jointfinanceseminar.com
+DTSTAMP:20261113T212728Z
+DTSTART;TZID=Europe/Berlin:20261111T160000
+DTEND;TZID=Europe/Berlin:20261111T171500
+SUMMARY:Joint Finance Seminar: Itzhak (Zahi) Ben-David (Ohio State Universi
+ ty)
+DESCRIPTION:Speaker: Itzhak (Zahi) Ben-David (Ohio State University)\nPaper
+ : Accretive Investment\n\nJoin on Zoom: https://tinyurl.com/mrzv5kya\n\nFo
+ r more information\, visit our website: www.jointfinanceseminar.com
+LOCATION:Online (Zoom)
+URL:https://tinyurl.com/mrzv5kya
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfs-2026-11-18-carter@jointfinanceseminar.com
+DTSTAMP:20261113T212728Z
+DTSTART;TZID=Europe/Berlin:20261118T160000
+DTEND;TZID=Europe/Berlin:20261118T171500
+SUMMARY:Joint Finance Seminar: Mary Ellen Carter (Boston College)
+DESCRIPTION:Speaker: Mary Ellen Carter (Boston College)\nPaper: Board React
+ ion to Stakeholder Voice: Evidence from Anti-SLAPP Laws\n\nJoin on Zoom: h
+ ttps://tinyurl.com/mrzv5kya\n\nFor more information\, visit our website: w
+ ww.jointfinanceseminar.com
+LOCATION:Online (Zoom)
+URL:https://tinyurl.com/mrzv5kya
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+UID:jfs-2026-11-25-kalmenovitz@jointfinanceseminar.com
+DTSTAMP:20261113T212728Z
+DTSTART;TZID=Europe/Berlin:20261125T160000
+DTEND;TZID=Europe/Berlin:20261125T171500
+SUMMARY:Joint Finance Seminar: Joseph Kalmenovitz (University of Rochester)
+DESCRIPTION:Speaker: Joseph Kalmenovitz (University of Rochester)\nPaper: C
+ ontagious Deregulation\n\nJoin on Zoom: https://tinyurl.com/mrzv5kya\n\nFo
+ r more information\, visit our website: www.jointfinanceseminar.com
+LOCATION:Online (Zoom)
+URL:https://tinyurl.com/mrzv5kya
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

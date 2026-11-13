@@ -80,8 +80,9 @@ body{padding:0}
 .top{border-bottom:1px solid var(--line);background:#fff}
 .top .in,.wrap,.foot .in{max-width:1180px;margin:0 auto;padding:0 16px}
 .top .in{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 22px;padding-top:14px;padding-bottom:10px}
-.brand{font-size:23px;font-weight:600;color:var(--ink);text-decoration:none;margin-right:auto}
-.brand span{color:var(--red)}
+.brand{font-size:23px;font-weight:600;color:var(--ink);text-decoration:none;margin-right:auto;display:inline-flex;align-items:center;gap:10px}
+.brand img{height:22px;width:auto;position:relative;top:1px}
+.brand .bt span{color:var(--red)}
 .top nav{display:flex;flex-wrap:wrap;gap:2px 18px;font-size:17px}
 .top nav a{color:var(--ink);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:1px}
 .top nav a:hover{border-bottom-color:#c9d6e3}
@@ -115,17 +116,142 @@ details summary:hover{color:var(--red)}
 @media (max-width:600px){
   body{font-size:17px}
   .top .in{gap:6px 18px}
-  .top nav{gap:2px 14px;font-size:16px}
+  .top .in{flex-direction:column;align-items:flex-start;padding-bottom:0}
+  .top nav{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;gap:0 16px;font-size:16px;padding-bottom:8px;scrollbar-width:none}
+  .top nav::-webkit-scrollbar{display:none}
+  .next{padding:14px 16px}
+  .next .ttl{font-size:19px}
   h1.pt{font-size:26px}
   .ghero{padding-top:12px}
   .ghero h1{font-size:34px}
   .gtag{font-size:20px;margin-top:16px}
   .gintro{font-size:17px}
 }
+
+/* "Journal" design (Gerrit, 2026-11-13): cream paper, Garamond, small-caps labels in Lato, dark red accents */
+:root{--ink:#1e1c19;--mute:#6b645a;--line:#e7e1d6;--soft:#f6f1e7;--red:#8B0000;--navy:#8B0000;--paper:#fdfcf9}
+body{background:var(--paper);color:var(--ink);font-size:19px;line-height:1.55}
+a{color:var(--red);text-decoration-color:#d9b9b9}
+a:hover{color:#5c0000}
+.lab,.top nav,.lbl,.round,.k,.sheet .m,.sheet .h,.strip span,.rt .dt,.rt .ac,.tag,.count,.foot{font-family:Lato,"Helvetica Neue",Arial,sans-serif}
+/* header */
+.top{background:var(--paper);border-top:0;border-bottom:1px solid var(--line)}
+.top .in,.wrap,.foot .in{max-width:980px;padding-left:24px;padding-right:24px}
+.top .in{padding-top:18px;padding-bottom:12px;align-items:center}
+.brand{font-size:21px;font-weight:600}
+.brand .bt span{color:var(--ink)}
+.top nav{font-size:12.5px;letter-spacing:.13em;text-transform:uppercase;gap:2px 22px}
+.top nav a{color:var(--mute);border-bottom:1px solid transparent;padding-bottom:2px}
+.top nav a:hover{color:var(--red);border-bottom-color:var(--red)}
+.top nav a[aria-current]{color:var(--red);border-bottom-color:var(--red)}
+/* page titles and labels */
+h1.pt{font-size:44px;font-weight:500;letter-spacing:-.005em;margin:34px 0 6px}
+.sub{font-style:italic;color:var(--mute);font-size:18px}
+.lbl,.round{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:0 0 8px;margin:42px 0 8px}
+h2.lbl{line-height:1.4}
+.rule{height:3px;border-top:1px solid var(--red);border-bottom:1px solid var(--red);margin:0 0 30px}
+/* front page */
+.ghero{padding:44px 0 4px}
+.ghero h1{font-size:60px;font-weight:500;color:var(--ink);letter-spacing:-.01em}
+.gtag{font-size:23px;font-weight:400;font-style:italic;color:var(--mute);margin:4px 0 30px}
+.gintro{font-size:19.5px;color:#36322c;margin:4px 0 30px}
+.next{max-width:none;margin:0 0 34px;border:0;border-radius:0;box-shadow:none;background:none;padding:0;display:grid;grid-template-columns:170px 1fr;gap:28px;align-items:center}
+.sheet{border:1px solid var(--red);text-align:center;padding:10px 6px 12px;color:var(--red);background:#fff}
+.sheet .m{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.sheet .d{font-size:60px;line-height:1;font-weight:600;font-variant-numeric:lining-nums;margin:2px 0}
+.sheet .h{font-size:12.5px;color:var(--mute)}
+.next .k{font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.next .ttl{font-size:28px;font-weight:500;line-height:1.25;margin:4px 0}
+.next .ttl a{color:var(--ink);border:0;text-decoration:none}
+.next .spk{color:var(--mute)}
+.next .act{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:10px}
+.next .act a,.rt .ac a,.subs-b .btn{font-family:Lato,Arial,sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);text-decoration:none;border:0;border-bottom:1px solid var(--red);border-radius:0;padding:0 0 1px;background:none}
+.subs-b .btn:hover{background:none;color:#5c0000}
+/* mailing list */
+#mc_embed_signup{max-width:none;background:#fff;border:1px solid var(--line);border-left:0;border-top:3px double var(--red);border-radius:0;padding:18px 22px;margin:0 0 6px}
+#mc_embed_signup h2{font-weight:500;font-size:25px}
+#mc_embed_signup .button{border-radius:2px;font-family:Lato,Arial,sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+input[type=search],#mc_embed_signup input[type="email"]{border:1px solid #d8d0c2;border-radius:2px;background:#fff}
+/* round table */
+table.rt{width:100%;border-collapse:collapse;margin-top:6px}
+.rt td{padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.rt .dt{width:76px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--red)}
+.rt .dt b{display:block;font:600 30px/1.05 "EB Garamond",Georgia,serif;letter-spacing:0;color:var(--ink);font-variant-numeric:lining-nums}
+.rt .ti{font-size:21px;line-height:1.3}
+.rt .ti a,.rt .sp a{text-decoration:none}
+.rt .ti a{color:var(--ink)}
+.rt .ti a:hover,.rt .sp a:hover{text-decoration:underline;text-decoration-color:var(--red);color:var(--red)}
+.rt .sp{color:var(--mute);font-size:17px}
+.rt .sp a{color:var(--mute)}
+.rt .nt{font-size:16px;font-style:italic;color:#7a5a00;margin-top:3px}
+.rt .ac{width:150px;text-align:right;font-size:12.5px;padding-top:17px}
+.rt .held{color:var(--mute);letter-spacing:.06em}
+.rt tr.past{opacity:.5}
+.subs{margin:22px 0 0;text-align:left}
+.subs-t{font-weight:500;font-size:19px;margin-bottom:6px}
+.subs-b{justify-content:flex-start;gap:6px 22px}
+.subs .hint{font-size:16px}
+/* statistics strip */
+.strip{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;border-top:1px solid var(--line);margin-top:44px;padding-top:22px;text-align:center}
+.strip b{display:block;font-size:44px;font-weight:500;color:var(--red);line-height:1;font-variant-numeric:lining-nums}
+.strip span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.more{text-align:center;font-style:italic;margin:10px 0 0}
+/* past seminars */
+.talk{grid-template-columns:118px 1fr;padding:12px 0;border-bottom:1px solid var(--line)}
+.talk .d{font-family:Lato,Arial,sans-serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);padding-top:5px}
+.talk .t{font-weight:500;font-size:20px;line-height:1.3}
+.talk .s{color:var(--mute)}
+.talk .s b{color:var(--ink);font-weight:500}
+.talk .p{font-style:italic}
+.talk .p a{border:0;text-decoration:underline;text-decoration-color:#d9b9b9}
+/* statistics page */
+.stats{border-color:var(--line)}
+.stat{border-right-color:var(--line)}
+.stat b{font-weight:500;font-size:40px}
+.stat span{font-family:Lato,Arial,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+details{background:none;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:10px 0;margin:0}
+summary{font-weight:500;font-size:20px}
+.inst .c{font-family:Lato,Arial,sans-serif;color:var(--red)}
+/* data page */
+.jump a{border-bottom-color:#d9b9b9}
+.ds{padding:12px 0;border-bottom:1px solid var(--line)}
+.ds .nm{font-weight:500;font-size:20px}
+.ds .nm a{color:var(--ink);border-bottom-color:#d9b9b9}
+.ds .nm a:hover{color:var(--red);border-bottom-color:var(--red)}
+.ds .pv{font-style:italic}
+.tag{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;border-color:#e3c6c6}
+.suggest{font-family:Lato,Arial,sans-serif;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;border:0;border-bottom:1px solid var(--red);border-radius:0;padding:0 0 1px}
+.suggest:hover{background:none}
+/* contact and privacy */
+.person{background:#fff;border:1px solid var(--line);border-top:3px double var(--red);border-radius:0}
+.person .nm{font-weight:500;font-size:23px}
+.person .ln a{font-family:Lato,Arial,sans-serif;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase}
+.addr{background:#fff;border-left:2px solid var(--red)}
+h3{font-weight:500;font-size:22px}
+/* footer */
+.foot{background:var(--paper);border-top:1px solid var(--line);font-size:13px;color:var(--mute);text-align:center}
+.foot a{color:var(--mute)}
+@media (max-width:640px){
+  .top nav{font-size:12px;gap:0 16px}
+  .ghero{padding-top:24px}
+  .ghero h1{font-size:40px}
+  .gtag{font-size:19px;margin-bottom:22px}
+  .next{grid-template-columns:96px 1fr;gap:16px}
+  .sheet .d{font-size:40px}
+  .sheet .h{font-size:11px;line-height:1.3}
+  .next .ttl{font-size:22px}
+  .rt .ac{display:none}
+  .rt .dt{width:56px}
+  .rt .ti{font-size:19px}
+  .strip{justify-content:center;gap:16px 26px}
+  .strip b{font-size:34px}
+  .talk{grid-template-columns:1fr}
+  h1.pt{font-size:34px}
+}
 </style>
 </head>
 <body>
-<header class="top"><div class="in"><a class="brand" href="/">Joint Finance <span>Seminar</span></a><nav aria-label="Main"><a href="/">Home</a><a href="/past-seminars/">Past seminars</a><a href="/some-statistics-about-the-seminar/">Statistics</a><a href="/free-datasets/">Free data sources</a><a href="/contact/" aria-current="page">Contact</a></nav></div></header>
+<header class="top"><div class="in"><a class="brand" href="/"><img src="/img/jfs_mark.png" alt="" width="60" height="22"><span class="bt">Joint Finance <span>Seminar</span></span></a><nav aria-label="Main"><a href="/">Home</a><a href="/past-seminars/">Past seminars</a><a href="/some-statistics-about-the-seminar/">Statistics</a><a href="/free-datasets/">Free data sources</a><a href="/contact/" aria-current="page">Contact</a></nav></div></header>
 <main class="wrap">
 <h1 class="pt">About us</h1>
 <p class="sub">If you have any questions about the seminar, feel free to reach out to us.</p>
