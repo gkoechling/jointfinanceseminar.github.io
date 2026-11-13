@@ -207,6 +207,26 @@ h2.lbl{line-height:1.4}
 #mc_embed_signup h2{font-weight:500;font-size:25px}
 #mc_embed_signup .button{border-radius:2px;font-family:Lato,Arial,sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
 input[type=search],#mc_embed_signup input[type="email"]{border:1px solid #d8d0c2;border-radius:2px;background:#fff}
+/* stay-informed panel: mailing list + calendar (more prominent, Gerrit 2026-11-13) */
+.stay{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#f7efe6;border-top:3px double var(--red);border-bottom:3px double var(--red);margin:10px 0 8px;scroll-margin-top:20px}
+.stay .col{padding:24px 26px 22px}
+.stay .col+.col{border-left:1px solid #e3d3c3}
+.stay .k{font-family:Lato,Arial,sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.stay h2{font-size:28px;font-weight:500;margin:4px 0 6px;line-height:1.2}
+.stay p{margin:0 0 14px;color:#3f3a33;font-size:18px}
+.stay .small{font-size:14.5px;color:var(--mute);margin:12px 0 0}
+.stay label{display:block;font-size:15px;margin:0 0 6px;color:var(--ink)}
+.stay .asterisk{color:var(--red)}
+.stay .row{display:flex;flex-wrap:wrap;gap:8px}
+.stay input[type="email"]{flex:1 1 220px;font:inherit;font-size:17px;padding:9px 12px;border:1px solid #cdbfac;border-radius:2px;background:#fff}
+.stay input[type="email"]:focus{outline:2px solid #e8c9c9;border-color:var(--red)}
+.stay .button{flex:0 0 auto;font-family:Lato,Arial,sans-serif;font-size:13.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:10px 20px;border:0;border-radius:2px;background:var(--red);color:#fff;cursor:pointer}
+.stay .button:hover{background:#6f0000}
+.stay .cb{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.stay .btn{font-family:Lato,Arial,sans-serif;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--red);border-radius:2px;padding:8px 14px;background:#fff;color:var(--red);text-decoration:none}
+.stay .btn.solid{background:var(--red);color:#fff}
+.stay .btn.solid:hover{background:#6f0000;color:#fff}
+.dl{font-size:15.5px;color:var(--mute);font-style:italic;margin:12px 0 0}
 /* round table */
 table.rt{width:100%;border-collapse:collapse;margin-top:6px}
 .rt td{padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top}
@@ -276,6 +296,9 @@ h3{font-weight:500;font-size:22px}
   .sheet .h{font-size:11px;line-height:1.3}
   .next .ttl{font-size:22px}
   .rt .ac{display:none}
+  .stay{grid-template-columns:1fr}
+  .stay .col+.col{border-left:0;border-top:1px solid #e3d3c3}
+  .stay .col{padding:20px 18px}
   .rt .dt{width:56px}
   .rt .ti{font-size:19px}
   .strip{justify-content:center;gap:16px 26px}
@@ -287,19 +310,19 @@ h3{font-weight:500;font-size:22px}
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Joint Finance Seminar", "url": "https://www.jointfinanceseminar.com/", "email": "info@jointfinanceseminar.com"}, {"@type": "Event", "name": "Joint Finance Seminar: Mary Ellen Carter (Boston College) – Board Reaction to Stakeholder Voice: Evidence from Anti-SLAPP Laws", "startDate": "2026-11-18T16:00:00+01:00", "endDate": "2026-11-18T17:15:00+01:00", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled", "isAccessibleForFree": true, "location": {"@type": "VirtualLocation", "url": "https://www.jointfinanceseminar.com/"}, "performer": {"@type": "Person", "name": "Mary Ellen Carter"}, "organizer": {"@type": "Organization", "name": "Joint Finance Seminar", "url": "https://www.jointfinanceseminar.com/"}, "description": "Online research seminar in finance and accounting via Zoom."}, {"@type": "Event", "name": "Joint Finance Seminar: Joseph Kalmenovitz (University of Rochester) – Contagious Deregulation", "startDate": "2026-11-25T16:00:00+01:00", "endDate": "2026-11-25T17:15:00+01:00", "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled", "isAccessibleForFree": true, "location": {"@type": "VirtualLocation", "url": "https://www.jointfinanceseminar.com/"}, "performer": {"@type": "Person", "name": "Joseph Kalmenovitz"}, "organizer": {"@type": "Organization", "name": "Joint Finance Seminar", "url": "https://www.jointfinanceseminar.com/"}, "description": "Online research seminar in finance and accounting via Zoom."}]}</script>
 </head>
 <body>
-<header class="top"><div class="in"><a class="brand" href="/"><img src="/img/jfs_mark.png" alt="" width="60" height="22"><span class="bt">Joint Finance <span>Seminar</span></span></a><nav aria-label="Main"><a href="/" aria-current="page">Home</a><a href="/past-seminars/">Past seminars</a><a href="/some-statistics-about-the-seminar/">Statistics</a><a href="/free-datasets/">Free data sources</a><a href="/contact/">Contact</a></nav></div></header>
+<header class="top"><div class="in"><a class="brand" href="/"><span class="bt">Joint Finance <span>Seminar</span></span></a><nav aria-label="Main"><a href="/" aria-current="page">Home</a><a href="/past-seminars/">Past seminars</a><a href="/some-statistics-about-the-seminar/">Statistics</a><a href="/free-datasets/">Free data sources</a><a href="/contact/">Contact</a></nav></div></header>
 <main class="wrap">
 <div class="ghero"><h1>Joint Finance Seminar</h1><div class="gtag">Online Research Seminars in Finance and Accounting</div></div>
 <div class="rule"></div>
 <div class="next"><div class="sheet"><div class="m">November</div><div class="d">18</div><div class="h">Wednesday</div><div class="h">4:00 – 5:15 pm CET</div></div>
 <div class="tx"><div class="k">Next talk</div><div class="ttl">Board Reaction to Stakeholder Voice: Evidence from Anti-SLAPP Laws</div><div class="spk"><a href="https://www.bc.edu/bc-web/schools/carroll-school/faculty-research/faculty-directory/mary-ellen-carter.html" target="_blank" rel="noopener">Mary Ellen Carter</a> · Boston College</div>
-<div class="act"><a href="/calendar/2026-11-18-carter.ics">Add to calendar</a><a href="#mc_embed_signup">Join the mailing list for the Zoom link</a></div></div></div>
+<div class="act"><a href="/calendar/2026-11-18-carter.ics">Add to calendar</a><a href="#stay">Get the Zoom link by email</a></div></div></div>
 <div class="gintro"><p>We organize this online research seminar series in finance and accounting to facilitate the exchange of ideas between academics and practitioners and to bring leading academic research to a broader audience.</p><p>The seminar has been initiated by Peter Limbach (University of Bielefeld and CFR) and is organized by him as well as Gerrit Köchling (Ilmenau University of Technology). We thank Christian Andres and Nic Schaub (WHU), André Betzer (University of Wuppertal), Hendrik Hakenes (University of Bonn), Peter N. Posch (TU Dortmund University), the Hamburg Financial Research Center, and colleagues from various European and U.S. universities for their support.</p><p>We are proud to present internationally recognized academic speakers and kindly invite you to join the discussion on Zoom (please join the mailing list below).</p>
 <p>If you have any questions, send an email to <a href="mailto:info@jointfinanceseminar.com">info@jointfinanceseminar.com</a>.</p></div>
-<div id="mc_embed_signup">
-  <h2>Join the mailing list</h2>
-  <p>We send the Zoom link and a short reminder before each talk, and the line-up when a new round starts.</p>
-  <form action="https://posch.us2.list-manage.com/subscribe/post?u=69be282cb736dcafe18bd8f37&amp;id=31f9b90142&amp;f_id=00844fe0f0"
+<section class="stay" id="stay">
+<div class="col"><div class="k">Mailing list</div><h2>Get the Zoom link by email</h2>
+<p>We send the Zoom link and a short reminder before each talk, and the line-up when a new round starts.</p>
+<form action="https://posch.us2.list-manage.com/subscribe/post?u=69be282cb736dcafe18bd8f37&amp;id=31f9b90142&amp;f_id=00844fe0f0"
         method="post" target="_blank" novalidate>
     <label for="mce-EMAIL">Email (from your institution) <span class="asterisk">*</span></label>
     <div class="row">
@@ -311,16 +334,17 @@ h3{font-weight:500;font-size:22px}
       <input type="text" name="b_69be282cb736dcafe18bd8f37_31f9b90142" tabindex="-1" value="">
     </div>
   </form>
-  <p class="small">We use your email address only for these mails. You can unsubscribe at any time with the link at the bottom
-  of every email. The list runs on Mailchimp; details in our <a href="https://www.jointfinanceseminar.com/privacy" target="_blank" rel="noopener">privacy notice</a>.</p>
-</div>
+<p class="small">We use your email address only for these mails and you can unsubscribe at any time. The list runs on Mailchimp; details in our <a href="/privacy/">privacy notice</a>.</p></div>
+<div class="col"><div class="k">Calendar</div><h2>All talks in your calendar</h2>
+<p>Subscribe once: the Joint Finance Seminar calendar then appears in your own calendar and updates by itself. New titles and every new round show up automatically, so no more downloading files.</p>
+<div class="cb"><a class="btn solid" href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fwww.jointfinanceseminar.com%2Fcalendar.ics" target="_blank" rel="noopener">Subscribe in Google Calendar</a><a class="btn" href="webcal://www.jointfinanceseminar.com/calendar.ics">Subscribe in Apple / Outlook</a><button type="button" class="btn" id="copycal" data-url="https://www.jointfinanceseminar.com/calendar.ics">Copy calendar link</button></div>
+<p class="small">Your calendar app checks for changes regularly, so updates can take a little while to appear. The copied link works in any calendar app ("subscribe from URL").</p></div>
+</section>
+<script>document.getElementById('copycal').addEventListener('click',e=>{const b=e.currentTarget;navigator.clipboard.writeText(b.dataset.url).then(()=>{b.textContent='Link copied';setTimeout(()=>b.textContent='Copy calendar link',2500);});});</script>
 <h2 class="lbl">Upcoming seminars · Round 14, Winter 2026</h2>
 <p class="sub">Wednesdays, online via Zoom. The Zoom link goes out with the reminders to the mailing list.</p>
 <table class="rt"><tr class="past"><td class="dt">Oct<b>28</b></td><td><div class="ti"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7250660" target="_blank" rel="noopener">Transparency on the Wrong Margin: Evidence from the Physician Payments Sunshine Act</a></div><div class="sp"><a href="https://www.lse.ac.uk/accounting/people/Stefano-Cascino" target="_blank" rel="noopener">Stefano Cascino</a> · London School of Economics · 4:00 – 5:15 pm CET</div></td><td class="ac"><span class="held">took place</span></td></tr><tr class="past"><td class="dt">Nov<b>4</b></td><td><div class="ti"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5292087" target="_blank" rel="noopener">Executive Bonus Adjustments to Industry Non-Financial Violations</a></div><div class="sp"><a href="https://faculty.unibocconi.eu/francescafranco/" target="_blank" rel="noopener">Francesca Franco</a> · Bocconi University · 4:00 – 5:15 pm CET</div></td><td class="ac"><span class="held">took place</span></td></tr><tr class="past"><td class="dt">Nov<b>11</b></td><td><div class="ti"><a href="https://www.alexchinco.com/accretive-investment.pdf" target="_blank" rel="noopener">Accretive Investment</a></div><div class="sp"><a href="https://fisher.osu.edu/people/ben-david.1" target="_blank" rel="noopener">Itzhak (Zahi) Ben-David</a> · Ohio State University · 4:00 – 5:15 pm CET</div><div class="nt">Right after the seminar (5:15 – 6:30 pm CET), Zahi will hold a course on generating research ideas, open to PhD students and interested faculty.</div></td><td class="ac"><span class="held">took place</span></td></tr><tr class=""><td class="dt">Nov<b>18</b></td><td><div class="ti">Board Reaction to Stakeholder Voice: Evidence from Anti-SLAPP Laws</div><div class="sp"><a href="https://www.bc.edu/bc-web/schools/carroll-school/faculty-research/faculty-directory/mary-ellen-carter.html" target="_blank" rel="noopener">Mary Ellen Carter</a> · Boston College · 4:00 – 5:15 pm CET</div></td><td class="ac"><a href="/calendar/2026-11-18-carter.ics">Add to calendar</a></td></tr><tr class=""><td class="dt">Nov<b>25</b></td><td><div class="ti"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5016972" target="_blank" rel="noopener">Contagious Deregulation</a></div><div class="sp"><a href="https://simon.rochester.edu/faculty/joseph-kalmenovitz" target="_blank" rel="noopener">Joseph Kalmenovitz</a> · University of Rochester · 4:00 – 5:15 pm CET</div></td><td class="ac"><a href="/calendar/2026-11-25-kalmenovitz.ics">Add to calendar</a></td></tr></table>
-<div class="subs"><div class="subs-t">All talks in your calendar, always up to date</div>
-<div class="subs-b"><a class="btn" href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fwww.jointfinanceseminar.com%2Fcalendar.ics" target="_blank" rel="noopener">Google Calendar</a><a class="btn" href="webcal://www.jointfinanceseminar.com/calendar.ics">Apple / Outlook</a><button type="button" class="btn" id="copycal" data-url="https://www.jointfinanceseminar.com/calendar.ics">Copy link</button></div>
-<span class="hint">A subscribed calendar updates by itself when we add titles or a new round. Or <a href="https://www.dropbox.com/scl/fi/3cnpmishkgd29rrd38nzo/joint_finance_seminar_winter2026.ics?rlkey=fes4i83a5ucq6bnzr869hl4kz&amp;st=yy2x1a7h&amp;dl=0" target="_blank" rel="noopener">download this round as a file (.ics)</a>.</span></div>
-<script>document.getElementById('copycal').addEventListener('click',e=>{const b=e.currentTarget;navigator.clipboard.writeText(b.dataset.url).then(()=>{b.textContent='Link copied';setTimeout(()=>b.textContent='Copy link',2500);});});</script>
+<p class="dl">Calendar subscription: see <a href="#stay">above</a>. This round as a single file: <a href="https://www.dropbox.com/scl/fi/3cnpmishkgd29rrd38nzo/joint_finance_seminar_winter2026.ics?rlkey=fes4i83a5ucq6bnzr869hl4kz&amp;st=yy2x1a7h&amp;dl=0" target="_blank" rel="noopener">download (.ics)</a>.</p>
 <div class="strip"><div><b>14</b><span>rounds</span></div><div><b>69</b><span>talks</span></div><div><b>64</b><span>speakers</span></div><div><b>49</b><span>institutions</span></div><div><b>11</b><span>countries</span></div></div><p class="more"><a href="/some-statistics-about-the-seminar/">More about the seminar in numbers</a></p>
 </main>
 <footer class="foot"><div class="in">Joint Finance Seminar · organized by Peter Limbach and Gerrit Köchling ·
