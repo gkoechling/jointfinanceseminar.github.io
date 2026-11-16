@@ -28,14 +28,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:jfs-2026-11-18-carter@jointfinanceseminar.com
-DTSTAMP:20261113T235536Z
+DTSTAMP:20261116T075024Z
 DTSTART;TZID=Europe/Berlin:20261118T160000
 DTEND;TZID=Europe/Berlin:20261118T171500
 SUMMARY:Joint Finance Seminar: Mary Ellen Carter (Boston College)
-DESCRIPTION:Speaker: Mary Ellen Carter (Boston College)\nPaper: Board React
- ion to Stakeholder Voice: Evidence from Anti-SLAPP Laws\n\nJoin on Zoom: h
- ttps://tinyurl.com/mrzv5kya\n\nFor more information\, visit our website: w
- ww.jointfinanceseminar.com
+DESCRIPTION:Speaker: Mary Ellen Carter (Boston College)\nPaper: Amplifying 
+ Influence: The Impact of Early Release of Voting Positions and Engagement\
+ n\nJoin on Zoom: https://tinyurl.com/mrzv5kya\n\nFor more information\, vi
+ sit our website: www.jointfinanceseminar.com
 LOCATION:Online (Zoom)
 URL:https://tinyurl.com/mrzv5kya
 STATUS:CONFIRMED
